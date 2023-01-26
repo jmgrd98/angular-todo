@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,9 +17,9 @@ export class AppComponent {
     duration: '1h'
   }
 
-  showTodo = false;
+  showTodo:boolean = false;
 
-  addTodo(){
+  addTodo():void{
     this.showTodo = true;
   }
 

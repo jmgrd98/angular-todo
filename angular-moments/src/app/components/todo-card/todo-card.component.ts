@@ -10,9 +10,4 @@ export class TodoCardComponent {
   @Input() todoName:string = ''
   @Input() todoDuration: string = ''
 
-  showTodo:boolean = false;
-
-  addTodo():void{
-    this.showTodo = true;
-  }
 }
