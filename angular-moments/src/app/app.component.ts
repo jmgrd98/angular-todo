@@ -20,7 +20,7 @@ export class AppComponent {
   showTodo:boolean = false;
 
   addTodo():void{
-    this.showTodo = true;
+    this.showTodo = !this.showTodo;
   }
 
   // title = 'angular-moments';
