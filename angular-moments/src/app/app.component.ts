@@ -18,5 +18,11 @@ export class AppComponent {
     duration: '1h'
   }
 
+  showTodo = false;
+
+  addTodo(){
+    this.showTodo = true;
+  }
+
   // title = 'angular-moments';
 }
