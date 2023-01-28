@@ -13,7 +13,7 @@ export class AppComponent {
   }
 
   todo = {
-    name: 'Fazer coco',
+    name: 'Fazer cocô',
     duration: '1h'
   }
 
