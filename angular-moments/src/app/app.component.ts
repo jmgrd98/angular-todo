@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Todo } from 'src/types/Todo';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,8 +20,20 @@ export class AppComponent {
 
   showTodo:boolean = false;
 
+  todos: Todo[] = []
+  newTodo: string
+
   addTodo():void{
-    this.showTodo = !this.showTodo;
+    if(this.newTodo){
+      let todo = new Todo()
+      todo.name = this.newTodo
+      todo.isCompleted = true
+      this.todos.push(todo)
+      this.newTodo = ''
+    }
+    else{
+      alert('Please enter todo!')
+    }
   }
 
   // title = 'angular-moments';

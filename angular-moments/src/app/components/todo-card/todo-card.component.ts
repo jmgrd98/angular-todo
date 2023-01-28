@@ -9,5 +9,6 @@ export class TodoCardComponent {
 
   @Input() todoName:string = ''
   @Input() todoDuration: string = ''
+  @Input() todoIsCompleted: boolean = false
 
 }

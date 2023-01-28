@@ -2,14 +2,14 @@
 <h1>Angular Todo!</h1>
 
 
-<input type="text" name="" id="">
-<input type="text" name="" id="">
+<input type="text" name="" id="" [(ngModel)]="newTodo">
 <button (click)="addTodo()">Add Todo!</button>
 
 <app-todo-card
 [todoName]="todo.name"
 [todoDuration]="todo.duration"
-*ngIf="showTodo">
+[todoIsCompleted]="todo.isCompleted"
+*ngFor="let todo of todos">
 </app-todo-card>
 
 </main>

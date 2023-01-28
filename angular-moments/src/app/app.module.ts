@@ -7,6 +7,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { TodoCardComponent } from './components/todo-card/todo-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TodoCardComponent } from './components/todo-card/todo-card.component';
     TodoCardComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
