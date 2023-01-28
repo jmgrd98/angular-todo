@@ -6,19 +6,6 @@ import { Todo } from 'src/types/Todo';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  userName = 'João'
-
-  userData = {
-    email: 'jmgrd98@gmail.com',
-    role: 'Web dev'
-  }
-
-  todo = {
-    name: 'Fazer cocô',
-    duration: '1h'
-  }
-
-  showTodo:boolean = false;
 
   todos: Todo[] = []
   newTodo: string

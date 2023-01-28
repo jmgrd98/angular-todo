@@ -6,12 +6,22 @@ main{
   justify-content: center;
   align-items: center;
   color: white;
-  border-radius: 10px;
   gap: 20px;
+  height: 100vh;
 }
 
 form{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+button{
+  padding: 10px;
+  width: 50%;
+  background-color: palevioletred;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
