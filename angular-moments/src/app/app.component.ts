@@ -23,5 +23,12 @@ export class AppComponent {
     }
   }
 
-  // title = 'angular-moments';
+  done(id: number){
+    this.todos[id].isCompleted = !this.todos[id].isCompleted
+    
+  }
+
+  deleteTodo(): void{
+    this.todos.pop()
+  }
 }
