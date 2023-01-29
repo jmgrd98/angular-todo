@@ -1,2 +1,2 @@
-# angular-moments
- Studying Angular frontend framework.
+# angular-todo
+ Angular to-do web app!
