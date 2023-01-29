@@ -25,10 +25,12 @@ export class AppComponent {
 
   done(id: number){
     this.todos[id].isCompleted = !this.todos[id].isCompleted
-    
+
   }
 
   deleteTodo(): void{
     this.todos.pop()
   }
+
+  
 }
