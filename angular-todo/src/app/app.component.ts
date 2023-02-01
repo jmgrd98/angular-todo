@@ -28,9 +28,11 @@ export class AppComponent {
 
   }
 
+  show: boolean = true
+
   deleteTodo(): void{
-    this.todos.pop()
+    this.show = false
   }
 
-  
+
 }

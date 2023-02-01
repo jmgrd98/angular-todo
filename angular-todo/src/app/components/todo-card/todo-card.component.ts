@@ -18,8 +18,11 @@ export class TodoCardComponent {
 
   @Output() delete:any = new EventEmitter()
 
+  show: boolean = true
+
   onDelete(){
-    this.delete.emit(todo)
+    this.delete.emit(this.todo)
+    this.show = false
   }
 
 
